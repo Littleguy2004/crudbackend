@@ -27,6 +27,10 @@ public class AppController {
 	public List<Product> display() {
 		return s.displayData();
 	}
+	@GetMapping("/mahesh")
+	public string magesh(){
+		return "mahesh";
+	}
 
 	@PutMapping("/update")
 	public String update(@RequestBody Product p) {
